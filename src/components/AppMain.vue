@@ -1,9 +1,34 @@
 <script>
-
+import axios from 'axios';
 export default {
     name: 'Appmain',
-    components: '',
+    data() {
+        return {
+            project: [],
+            urlAddress: 'http://127.0.0.1:8000/api/projects/'
+        }
+    },
+    methods: {
+        getProject() {
+            axios.get(this.urlAddress, {
+                params: {
+
+                }
+            })
+                .then(function (response) {
+                    console.log(response.data.result.data);
+                })
+                .catch(function (error) {
+                    console.log(error);
+                })
+
+        }
+    },
+    created() {
+        this.getProject();
+    },
 }
+
 </script>
 
 <template lang="">
@@ -12,4 +37,4 @@ export default {
     </div>
 </template>
 
-<style scoped lang="scss"></style>
+<style  lang="scss" scoped></style>
