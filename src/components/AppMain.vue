@@ -1,10 +1,14 @@
 <script>
 import axios from 'axios';
+import ProjectComponent from '.ProjectComponent.vue';
 export default {
     name: 'Appmain',
+    components: {
+        ProjectComponent
+    },
     data() {
         return {
-            project: [],
+            projects: [],
             urlAddress: 'http://127.0.0.1:8000/api/projects/'
         }
     },
@@ -15,8 +19,8 @@ export default {
 
                 }
             })
-                .then(function (response) {
-                    console.log(response.data.result.data);
+                .then((response) => {
+                    this.projects = response.data.result.data;
                 })
                 .catch(function (error) {
                     console.log(error);
@@ -32,9 +36,14 @@ export default {
 </script>
 
 <template lang="">
-    <div>
-        <h1>ciao</h1>
-    </div>
+    <section>
+        <div class="container">
+            <div class="row">
+                <h1 class="text-center">MyProjects</h1>
+                   <ProjectComponent/>
+            </div>
+        </div>
+    </section>
 </template>
 
 <style  lang="scss" scoped></style>
