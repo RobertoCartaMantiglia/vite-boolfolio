@@ -1,6 +1,6 @@
 <template>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
+        <div class="container-fluid">
             <a class="navbar-brand" href="#">Boolfolio</a>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">

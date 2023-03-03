@@ -40,7 +40,7 @@ export default {
     <section>
         <div class="container">
             <div class="row  justify-content-around">
-                <h1 class="text-center">MyProjects</h1>
+                <!-- <h1 class="text-center">MyProjects</h1> -->
                 <ProjectComponent v-for="project in projects" :projectTitle="project.title"
                     :projectDescription="project.description" />
             </div>

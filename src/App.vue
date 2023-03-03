@@ -15,18 +15,16 @@ export default {
 </script>
 
 <template>
-  <div class="container">
-    <header>
-      <AppHeader />
-      <router-view></router-view>
-    </header>
+  <header>
+    <AppHeader />
+    <router-view></router-view>
+  </header>
 
-    <main>
+  <main>
+    <!-- <AppMain /> -->
 
 
-
-    </main>
-  </div>
+  </main>
 </template>
 
 <style lang="scss">
