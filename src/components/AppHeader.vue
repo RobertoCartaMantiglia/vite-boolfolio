@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="d-flex">
+        <div class="d-flex p-2">
             <ul>
                 <li>Home</li>
                 <li>Project</li>
