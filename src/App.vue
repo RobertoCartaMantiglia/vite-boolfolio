@@ -18,12 +18,13 @@ export default {
   <div class="container">
     <header>
       <AppHeader />
+      <router-view></router-view>
     </header>
 
     <main>
-      <AppMain />
 
-      <router-view></router-view>
+
+
     </main>
   </div>
 </template>
