@@ -1,11 +1,11 @@
 <script>
 import AppMain from './components/AppMain.vue';
-// import ProjectComponent from './components/ProjectComponent.vue';
+
 export default {
   name: 'App',
   components: {
     AppMain,
-    // ProjectComponent
+
   },
 
 }
@@ -14,7 +14,6 @@ export default {
 <template>
   <main>
     <AppMain />
-    <!-- <ProgectComponent /> -->
   </main>
 </template>
 
