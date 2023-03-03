@@ -1,10 +1,13 @@
 <script>
 import AppMain from './components/AppMain.vue';
+import AppHeader from './components/AppHeader.vue';
+
 
 export default {
   name: 'App',
   components: {
     AppMain,
+    AppHeader
 
   },
 
@@ -12,9 +15,17 @@ export default {
 </script>
 
 <template>
-  <main>
-    <AppMain />
-  </main>
+  <div class="container">
+    <header>
+      <AppHeader />
+    </header>
+
+    <main>
+      <AppMain />
+
+      <router-view></router-view>
+    </main>
+  </div>
 </template>
 
 <style lang="scss">
