@@ -20,7 +20,7 @@ export default {
 </script>
 
 <template>
-    <div class="col-5 project-card p-2 border border-dark rounded">
+    <div class="col-5 project-card my-2 p-2 border border-dark rounded">
         <!-- <img :src="project.thumb" class="card-img-top" alt="#"> -->
         <div class="card-body">
             <h5 class="card-title">{{ projectTitle }}</h5>

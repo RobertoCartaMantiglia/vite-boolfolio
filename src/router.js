@@ -3,6 +3,8 @@ import HomePage from './pages/HomePage.vue';
 import ProjectsList from './pages/ProjectsList.vue';
 import AboutUs from './pages/AboutUs.vue';
 
+
+
 const router = createRouter({
     history: createWebHistory(),
     routes: [
@@ -21,6 +23,7 @@ const router = createRouter({
             name: 'about-us',
             component: 'AboutUs'
         }
+
     ]
 
 });
