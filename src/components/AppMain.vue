@@ -42,7 +42,7 @@ export default {
             <div class="row  justify-content-around">
                 <!-- <h1 class="text-center">MyProjects</h1> -->
                 <ProjectComponent v-for="project in projects" :projectTitle="project.title"
-                    :projectDescription="project.description" />
+                    :projectDescription="project.description.substr(0, 200)" />
             </div>
         </div>
     </section>
