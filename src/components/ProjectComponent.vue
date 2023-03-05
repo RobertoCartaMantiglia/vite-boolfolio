@@ -26,6 +26,9 @@ export default {
             <h5 class="card-title mb-2">{{ projectTitle }}</h5>
             <p class="card-text">{{ projectDescription }}</p>
             <a href="#" class="btn btn-primary">Show more</a>
+            <!-- <router-link :to="{ name: 'single-post', params: { project_id: project_id } }" class="nav-link">
+                    Show more
+                </router-link> -->
         </div>
     </div>
 </template>

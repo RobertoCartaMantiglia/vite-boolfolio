@@ -20,6 +20,7 @@
                             Projects
                         </router-link>
                     </li>
+
                 </ul>
             </div>
         </div>
@@ -30,7 +31,7 @@ export default {
     name: 'AppHeader'
 }
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
 ul {
 
 
