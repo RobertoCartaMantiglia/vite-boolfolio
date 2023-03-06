@@ -3,8 +3,8 @@
 export default {
     name: 'ProjectComponent',
     props: [
-        'projectTitle',
-        'projectDescription',
+
+        'project'
     ],
     data() {
         return {
@@ -21,14 +21,15 @@ export default {
 
 <template>
     <div class="col-5 project-card my-2 p-2 border border-dark rounded">
-        <img :src="project.thumb" class="card-img-top" alt="#">
+        <img :src="`http://127.0.0.1:8000/storage/${project.thumb}`" class="card-img-top img-fluid mb-3" alt="#">
         <div class="card-body">
-            <h5 class="card-title mb-2">{{ projectTitle }}</h5>
-            <p class="card-text">{{ projectDescription }}</p>
-            <a href="#" class="btn btn-primary">Show more</a>
-            <!-- <router-link :to="{ name: 'single-post', params: { id: projectId } }" class="nav-link">
+            <h5 class="card-title mb-2">{{ project.title }}</h5>
+            <p class="card-text">{{ project.description }}</p>
+            <button class="btn btn-primary">
+                <router-link :to="{ name: 'single-post', params: { id: project.id } }" class="nav-link ">
                     Show more
-                </router-link> -->
+                </router-link>
+            </button>
         </div>
     </div>
 </template>
