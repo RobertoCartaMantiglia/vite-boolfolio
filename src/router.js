@@ -24,7 +24,7 @@ const router = createRouter({
             component: AboutUs
         },
         {
-            path: '/about_us/:project_id',
+            path: '/about_us/:id',
             name: 'single-post',
             component: SinglePost
         }
